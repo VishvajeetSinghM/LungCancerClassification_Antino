@@ -27,6 +27,9 @@ While stacking models could theoretically improve prediction accuracy, the absen
 **DEMO: https://drive.google.com/file/d/17H7U9qEREBp4RS--4tqOMdA97izO_V79/view?usp=sharing
 **
 
+CAT Scan Dataset - https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images/data
+Medical History Dataset - https://www.kaggle.com/code/sandragracenelson/lung-cancer-prediction?select=survey+lung+cancer.csv
+
 ## Setup & Installation
 Follow these steps to set up and run the project:
 
