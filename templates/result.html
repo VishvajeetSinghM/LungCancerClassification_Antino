@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .prediction {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Prediction Results</h2>
+        <p>Dr. Decision Tree Prediction: <span class="prediction">{{ decision_tree_prediction }}</span></p>
+        <p>Dr. CNN Prediction: <span class="prediction">{{ cnn_prediction }}</span></p>
+        <p>Dr. SVM Prediction: <span class="prediction">{{ svm_prediction }}</span></p>
+        <p>Dr. Stacking Model Prediction: <span class="prediction">{{ stacking_prediction }}</span></p>
+    </div>
+    <div style="border: 1px solid #ddd; padding: 15px; margin-top: 10px; background-color: #f8f9fa;">
+        <h3>Prediction Interpretation</h3>
+        <p><strong>Decision Tree (Medical History Data):</strong> 0 → Normal, 1 → Cancer Detected</p>
+        <p><strong>CNN Model (CAT Scan):</strong> 0 → Adenocarcinoma, 1 → Large Cell Carcinoma, 2 → Normal, 3 → Squamous</p>
+        <p><strong>SVM Model (CAT Scan):</strong> 0 → Adenocarcinoma, 1 → Large Cell Carcinoma, 2 → Normal, 3 → Squamous</p>
+        <p><strong>Stacking Model (CNN + SVM):</strong> 0 → Adenocarcinoma, 1 → Large Cell Carcinoma, 2 → Normal, 3 → Squamous</p>
+        
+        If Stacking Model gives '2' and Decision Tree gives '0' that means it is truly Non Cancerous (hence both radiologist and physician have given same diagnosis) else you should get second opinion.  
+        </div>
+    
+</body>
+</html>

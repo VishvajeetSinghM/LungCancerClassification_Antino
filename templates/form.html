@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Model Data Collection</title>
+</head>
+<body>
+
+    <h2>Test Model Data Collection</h2>
+    <h3> 0 means No, 1 means yes</h3>
+    <form action="{{ url_for('home') }}" method="post" enctype="multipart/form-data">
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" step="0.01" min="0" required>
+        <br><br>
+
+        <label for="chronic_disease">Chronic Disease (0/1):</label>
+        <input type="number" id="chronic_disease" name="chronic_disease" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="allergy">Allergy (0/1):</label>
+        <input type="number" id="allergy" name="allergy" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="fatigue">Fatigue (0/1):</label>
+        <input type="number" id="fatigue" name="fatigue" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="anxiety">Anxiety (0/1):</label>
+        <input type="number" id="anxiety" name="anxiety" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="swallowing_difficulty">Swallowing Difficulty (0/1):</label>
+        <input type="number" id="swallowing_difficulty" name="swallowing_difficulty" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="smoking">Smoking (0/1):</label>
+        <input type="number" id="smoking" name="smoking" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="chest_pain">Chest Pain (0/1):</label>
+        <input type="number" id="chest_pain" name="chest_pain" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="shortness_of_breath">Shortness of Breath (0/1):</label>
+        <input type="number" id="shortness_of_breath" name="shortness_of_breath" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="peer_pressure">Peer Pressure (0/1):</label>
+        <input type="number" id="peer_pressure" name="peer_pressure" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="alcohol_consuming">Alcohol Consuming (0/1):</label>
+        <input type="number" id="alcohol_consuming" name="alcohol_consuming" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select>
+        <br><br>
+
+        <label for="wheezing">Wheezing (0/1):</label>
+        <input type="number" id="wheezing" name="wheezing" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="yellow_fingers">Yellow Fingers (0/1):</label>
+        <input type="number" id="yellow_fingers" name="yellow_fingers" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="coughing">Coughing (0/1):</label>
+        <input type="number" id="coughing" name="coughing" step="1" min="0" max="1" required>
+        <br><br>
+
+        <label for="scan_img">Scan Image:</label>
+        <input type='file' id="scan_img" accept="image/*"  name="scan_img"  required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
