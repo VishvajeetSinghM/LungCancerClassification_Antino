@@ -66,6 +66,7 @@ Follow these steps to set up and run the project:
 ## Conclusion
 Despite dataset limitations, combining these two approaches offers a **holistic assessment** of lung cancer risk. CNN-based models analyze lung images, while medical history models provide additional context. Future research should focus on developing standardized datasets to facilitate seamless model stacking for improved diagnostic precision.
 
+![Screenshot 2025-03-16 234546](https://github.com/user-attachments/assets/1699c93c-b711-4444-a76f-900b7f2ecef8)
 
 
 
